@@ -1,0 +1,45 @@
+.footer
+  width: 100%
+  height: auto
+  background-color: rgb(243,243,243)
+  padding: 80px 0 90px 0
+  text-align: center
+  &__logo
+    font-family: $font-bigJohn
+    font-size: 25px
+    text-transform: uppercase
+    text-decoration: none
+    color: rgb(50,58,69)
+    cursor: pointer
+    display: block
+    margin-bottom: 25px
+  &__copyright
+    font-family: $font-OpenSans
+    font-size: 16px
+    font-weight: 400
+    color: $color-grey
+    margin-bottom: 40px
+  &__social-list
+    display: flex
+    justify-content: center
+  &__social-item
+    height: 25px
+    width: 25px
+    border-radius: 50%
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &__social-item:not(:last-child)
+    margin-right: 10px
+  &__item-first
+    background-color: rgb(59,89,152)
+  &__item-second
+    background-color: rgb(38,166,209)
+  &__item-third
+    background-color: rgb(14,118,168)
+  &__item-fourth
+    background-color: rgb(63,114,155)
+  &__item-fifth
+    background-color: rgb(134,201,209)
+  &__link
+    cursor: pointer

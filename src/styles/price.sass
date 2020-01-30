@@ -1,0 +1,89 @@
+.price
+  width: 100%
+  height: auto
+  padding: 80px 0
+  background-color: rgb(243,243,243)
+  &__container
+    width: 100%
+    max-width: 840px
+    height: auto
+    margin: 0 auto
+  &__container-text
+    @include standard__container-text
+  &__title
+    @include standard__title
+  &__subtitle
+    @include standard__subtitle
+  &__list
+    width: 100%
+    height: auto
+    display: flex
+    justify-content: space-between
+  &__item
+    width: 235px
+    height: auto
+    background-color: #fff
+    position: relative
+    overflow: hidden
+  &__item-visible
+    width: 100%
+    height: auto
+    margin-bottom: 100px
+  &__item-name
+    padding: 25px 0
+    text-align: center
+    font-family: $font-OpenSans
+    font-size: 20px
+    font-weight: bold
+    color: #fff
+    text-transform: uppercase
+    background-color: $color-green
+  &__item-cost
+    padding-top: 60px
+    text-align: center
+    font-family: $font-SourceSans
+    font-size: 42px
+    font-weight: bold
+    color: $color-green
+  &__item-time
+    text-align: center
+    font-family: $font-OpenSans
+    font-size: 20px
+    font-weight: 400
+    color: $color-lightgrey
+  &__item-hide
+    position: absolute
+    left: 0
+    z-index: 10 
+    top: -100%
+    position: absolute
+    z-index: 10
+    transition: top 0.5s ease-in-out
+  &__item-services
+    background-color: #fff
+    width: 235px
+    height: auto
+    padding: 30px 0 0 30px
+    margin-bottom: 50px
+  &__item-service
+    text-align: left
+    font-family: $font-OpenSans
+    font-size: 14px
+    font-weight: 400
+    color: $color-lightgrey
+  &__item-service:not(:last-child)
+    margin-bottom: 15px
+  &__item-link
+    padding: 25px 78.35px
+    background-color: $color-green
+    color: #fff
+    text-align: center
+    font-family: $font-OpenSans
+    font-size: 16px
+    font-weight: 400
+    text-decoration: none
+  &__item:hover .price__item-hide
+    top: 0
+  &__item:hover .price__item-name
+    color: $color-green
+

@@ -1,0 +1,103 @@
+.portfolio
+  width: 100%
+  height: auto
+  background-color: rgb(243,243,243)
+  padding: 80px 0 100px 0
+  &__container-text
+    @include standard__container-text
+  &__title
+    @include standard__title
+  &__subtitle
+    @include standard__subtitle
+  &__category-list
+    margin: 0 auto
+    width: 54%
+    display: flex
+    justify-content: space-around
+  &__category-item
+    margin-bottom: 45px
+  &__category-link
+    font-family: $font-OpenSans
+    font-size: 16px
+    color: $color-grey
+    text-decoration: none
+    margin-bottom: 15px
+  &__category-link--active::after
+    position: relative
+    top: 10px
+    display: block
+    content: " "
+    margin: 0 auto
+    width: 38px
+    height: 2px
+    background-color: $color-green
+  &__gallery-list
+    margin: 0 auto
+    height: 900px
+    width: 100%
+    max-width: 1110px
+    column-count: 4
+    margin-bottom: 40px
+  &__gallery-item
+    position: relative
+    width: 270px
+    height: auto
+    margin-bottom: 10px
+  &__gallery-item:hover .portfolio__gallery-content
+    opacity: 1
+  &__gallery-image
+    width: 100%
+    height: 100%
+  &__gallery-content
+    opacity: 0
+    width: 100%
+    height: 99%
+    left: 0 
+    top: 0
+    position: absolute
+    z-index: 10
+    transition: opacity 0.5s ease-in-out
+    background-color: rgba(34,34,34,0.8)
+    padding-left: 20px
+    padding-top: 30px
+  &__gallery-title
+    font-family: $font-SourceSans
+    font-size: 20px
+    font-weight: 100
+    text-transform: uppercase
+    color: $color-green
+    letter-spacing: 5px
+    margin-bottom: 35px
+  &__gallery-title::after
+    position: relative
+    top: 10px
+    display: block
+    content: " "
+    width: 23px
+    height: 1px
+    background-color: $color-green
+  &__gallery-text
+    font-family: $font-OpenSans
+    font-size: 12px
+    line-height: 1.8
+    color: $color-lightgrey
+  &__footer
+    width: 96%
+    margin: 0 auto
+    height: 200px
+    background-image: url('../assets/img/portfolio/portfolio-bg.png') 
+    background-size: cover
+    background-repeat: no-repeat
+  &__footer-content
+    width: 100%
+    height: 100%
+    background-color: rgba(25,189,154, 0.9)
+    padding-top: 60px
+    text-align: center
+  &__footer-text
+    font-family: $font-OpenSans
+    font-size: 20px
+    color: #fff
+    margin-bottom: 30px
+  &__footer-link
+    @include standard__link

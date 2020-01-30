@@ -1,0 +1,79 @@
+.details
+  width: 100%
+  height: auto
+  background-color: rgb(243,243,243)
+  padding: 80px 0 100px 0
+  &__container
+    @include standard__container
+  &__container-text
+    @include standard__container-text
+  &__title
+    @include standard__title
+  &__subtitle
+    @include standard__subtitle
+  &__slider
+    width: 100%
+    padding-top: 120px
+  &__slide
+    width: 100%
+
+.slide-details
+  &__title
+    font-family: $font-OpenSans
+    font-size: 20px
+    color: $color-grey
+    font-weight: 400
+    margin-bottom: 40px
+  &__content
+    display: flex
+    justify-content: space-between
+  &__slogan
+    width: 33%
+    min-width: 320px
+    font-family: $font-OpenSans
+    font-size: 16px
+    color: $color-lightgrey
+    line-height: 1.8
+  &__text
+    width: 53%
+    font-family: $font-OpenSans
+    font-size: 14px
+    color: $color-lightgrey
+    line-height: 1.8
+  &__word-green
+    color: $color-green
+    font-weight: bold
+
+
+//-------indicators----------
+
+.details__dots
+  top: 0px
+  li
+    margin-right: 50px
+    button::before
+      display: block
+      font-family: $font-peIcon
+      background-color: $color-lightgrey
+      padding-top: 10px
+      height: 40px
+      width: 50px
+      border-radius: 50%
+      opacity: 1
+  .slick-active
+    button::before
+      background-color: $color-green
+
+.details__dots li:first-child 
+  button::before
+    content: url('../assets/img/details/like.svg')
+
+.details__dots li:nth-child(2)
+  button::before
+    content: url('../assets/img/details/mouse.svg')
+
+.details__dots li:last-child 
+  button::before
+    content: url('../assets/img/details/light.svg')
+
+

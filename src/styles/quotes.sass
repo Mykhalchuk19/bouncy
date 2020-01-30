@@ -1,0 +1,60 @@
+.quote
+  width: 100%
+  height: auto
+  padding-top: 35px
+  &__bg-image
+    width: 100%
+    height: auto
+    background-image: url('../assets/img/quotes/background__quotes.png')
+    background-repeat: no-repeat
+    background-size: cover
+  &__bg-color
+    width: 100%
+    height: auto
+    background-color: rgba(34,34,34, 0.8)
+    padding-bottom: 100px
+  &__container
+    display: flex
+    justify-content: space-between
+    @include standard__container
+  &__img
+    transform: translateY(-35px)
+  &__content
+    width: 530px
+    padding-top: 80px
+  &__title
+    font-family: $font-SourceSans
+    font-size: 20px
+    font-weight: 400
+    text-transform: uppercase
+    color: #fff
+    letter-spacing: 5px
+    margin-bottom: 35px
+    text-align: left
+  &__text
+    font-family: $font-OpenSans
+    font-size: 16px
+    color: rgb(165,165,165)
+    line-height: 1.8
+    text-align: left
+    margin-bottom: 30px
+  &__name
+    font-family: $font-OpenSans
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    color: rgb(165,165,165)
+    line-height: 1.8
+    text-align: left
+    margin-bottom: 10px
+  &__position
+    font-family: $font-OpenSans
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    color: rgb(165,165,165)
+    line-height: 1.8
+    text-align: left
+    margin-bottom: 10px
+  &__position-green
+    color: $color-green

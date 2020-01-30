@@ -1,0 +1,111 @@
+.services
+  width: 100%
+  height: auto
+  padding: 80px 0 100px 0
+  &__container
+    @include standard__container
+  &__container-text
+    @include standard__container-text
+  &__title
+    @include standard__title
+  &__subtitle
+    @include standard__subtitle
+  &__slider
+    width: 100%
+    height: auto
+  &__slide
+    width: 100%
+    display: flex !important
+    justify-content: space-between
+
+.slide-services
+  &__content
+    width: 37%
+    max-width: 400px
+    padding-left: 100px
+  &__title
+    font-family: $font-OpenSans
+    font-size: 20px
+    color: $color-grey
+    font-weight: 400
+    margin-bottom: 40px
+  &__subtitle
+    font-family: $font-OpenSans
+    font-size: 16px
+    color: $color-lightgrey
+    line-height: 1.8
+    font-weight: 400
+    margin-bottom: 40px
+  &__text
+    font-family: $font-OpenSans
+    font-size: 14px
+    color: $color-lightgrey
+    line-height: 1.8
+  &__word-green
+    color: $color-green
+    font-weight: bold
+  &__list
+    display: flex
+    justify-content: space-between
+    width: 450px
+    padding-top: 60px
+  &__item
+    height: auto
+    width: 125px
+  &__proggress
+    height: 124px
+    width: 124px
+  &__progress-name
+    font-size: 16px
+    font-family: $font-Roboto
+    font-weight: 300
+    color: $color-lightgrey
+    text-align: center
+
+.circle__progress
+  transform: rotate(270deg)
+  transform-origin: 50% 50%
+
+.circle__progress-ring
+  stroke-dasharray: 10 20
+  transform: rotate(270deg)
+  transform-origin: 50% 50%
+
+
+//-------------slider-dots--------------
+
+.services__dots
+  top: 50%
+  transform: translate(0, -50%)
+  display: flex
+  flex-direction: column
+  li
+    margin-bottom: 50px
+    button::before
+      display: block
+      font-family: $font-peIcon
+      background-color: $color-lightgrey
+      padding-top: 10px
+      height: 40px
+      width: 50px
+      border-radius: 50%
+      opacity: 1
+  .slick-active
+    button::before
+      background-color: $color-green
+
+.services__dots li:first-child 
+  button::before
+    content: url('../assets/img/services/tools.svg')
+
+.services__dots li:nth-child(2)
+  button::before
+    content: url('../assets/img/services/paint.svg')
+
+.services__dots li:nth-child(3)
+  button::before
+    content: url('../assets/img/services/joy.svg')
+
+.services__dots li:last-child 
+  button::before
+    content: url('../assets/img/services/plug.svg')

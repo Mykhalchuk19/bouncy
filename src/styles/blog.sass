@@ -1,0 +1,97 @@
+.blog
+  width: 100%
+  height: auto
+  background-size: cover
+  background-repeat: no-repeat
+  background-image: url('../assets/img/blog/background.png')
+  &-bg
+    width: 100%
+    height: auto
+    background-color: rgba(0,0,0,0.8)
+    padding: 80px 0 100px 0
+  &__container-text
+    width: 100%
+    max-width: 470px
+    margin-bottom: 100px
+  &__title
+    font-family: $font-SourceSans
+    font-size: 20px
+    font-weight: 200
+    text-transform: uppercase
+    color: rgb(255,255,255)
+    letter-spacing: 5px
+    margin-bottom: 35px
+    text-align: left
+  &__subtitle
+    font-family: $font-OpenSans
+    font-size: 14px
+    color: rgb(179,179,179)
+    line-height: 1.8
+    margin-bottom: 35px
+    text-align: left
+    font-weight: 400
+  &__slider
+    width: 100%
+    padding-left: 100px
+    //max-width: 700px
+  &__slide
+    width: 100%
+    max-width: 700px
+  &__name-news
+    font-family: $font-OpenSans
+    font-size: 20px
+    color: rgb(225,225,225)
+    font-weight: 400
+    margin-bottom: 15px
+  &__author-news
+    font-family: $font-SourceSans
+    font-size: 14px
+    color: $color-lightgrey
+    text-transform: uppercase
+    font-style: italic
+    font-weight: 200
+    margin-bottom: 20px
+  &__author-news--green
+    color: $color-green
+  &__popular-news
+    font-family: $font-SourceSans
+    font-size: 14px
+    color: rgba(224,224,224, 0.5)
+    font-weight: 200
+    margin-bottom: 60px
+  &__text-news
+    font-family: $font-OpenSans
+    font-size: 14px
+    color: $color-lightgrey
+    font-weight: 400
+    line-height: 1.8
+    margin-bottom: 50px
+  &__link-news
+    font-family: $font-OpenSans
+    font-size: 16px
+    color: rgb(179,179,179)
+    font-weight: 400
+    line-height: 1.8
+    text-decoration: none
+
+//----------------indicators
+.blog__dots
+  width: 12px
+  positon: absolute
+  top: 50%
+  left: 100%
+  transform: translate(0, -50%)
+  display: flex
+  flex-direction: column
+  li
+    margin-bottom: 10px
+    button::before
+      height: 10px
+      content: " "
+      width: 10px
+      border-radius: 50%
+      border: 1px solid rgb(179,179,179)
+      opacity: 1
+  .slick-active
+    button::before
+      background-color: rgb(179,179,179)
