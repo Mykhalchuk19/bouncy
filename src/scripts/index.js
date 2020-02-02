@@ -4,6 +4,7 @@ import './svg.js';
 require('slick-carousel');
 require('slick-carousel/slick/slick.scss');
 require('slick-carousel/slick/slick-theme.scss');
+require('slick-carousel/slick/ajax-loader.gif');
 const $ = require('jquery');
 $('.details__slider').slick({
   dots: true,
